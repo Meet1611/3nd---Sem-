@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let Students = [
+            {
+                "number": "1-446-419-9024 x9493",
+                "name": "Lois Johns",
+                "id": "1",
+                "spi": 9.86
+            },
+            {
+                "number": "1-256-382-6427",
+                "name": "Francisco Cormier",
+                "id": "2",
+                "spi": 9.04
+            },
+            {
+                "number": "626-975-9476 x842",
+                "name": "Thelma Schmidt",
+                "id": "3",
+                "spi": 8.96
+            },
+            {
+                "number": "(702) 390-6314",
+                "name": "Desiree Moore",
+                "id": "4",
+                "spi": 8.95
+            },
+            {
+                "number": "1-339-466-1019",
+                "name": "Debbie Breitenberg",
+                "id": "5",
+                "spi": 8.94
+            },
+        ];
+
+        document.write('<table border=1 style="border-collapse: collapse" >');
+        for (let i = 0; i <Students.length; i++) {
+        
+            document.write('<tr>');
+                document.write('<td>' + Students[i].number + '</td>');
+                document.write('<td>' + Students[i].name + '</td>');
+                document.write('<td>' + Students[i].id + '</td>');
+                document.write('<td>' + Students[i].spi + '</td>');
+            document.write('</tr>');
+
+        }
+        document.write('</table>');
+
+        console.log(Students);
+    </script>
+</body>
+
+</html>

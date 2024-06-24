@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        a = prompt("Enter first Number : ")
+        b = prompt("Enter second Number : ")
+
+        let Fac1 = new Array()
+        ans = 1
+
+        for (let i = 1; i < a; i++) {
+            if (a % i == 0) {
+                Fac1.push(i);
+            }
+        }
+
+        for (let i = 1; i < b; i++) {
+            if (b % i == 0) {
+                for(let j = 0; j < Fac1.length; j++) {
+                    if(Fac1[j] == i) {
+                        ans = i
+                    }
+                }
+            }
+        }
+
+        document.write("GCD of two Numbers is " + ans)
+    </script>
+</body>
+</html>

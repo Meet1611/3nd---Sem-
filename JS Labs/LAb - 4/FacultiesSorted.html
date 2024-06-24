@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let Faculties = [
+            {
+                "number": "1-446-419-9024 x9493",
+                "name": "Lois Johns",
+                "id": "1"
+            },
+            {
+                "number": "1-256-382-6427",
+                "name": "Francisco Cormier",
+                "id": "2"
+            },
+            {
+                "number": "626-975-9476 x842",
+                "name": "Thelma Schmidt",
+                "id": "3"
+            },
+            {
+                "number": "(702) 390-6314",
+                "name": "Desiree Moore",
+                "id": "4"
+            },
+            {
+                "number": "1-339-466-1019",
+                "name": "Debbie Breitenberg",
+                "id": "5"
+            },
+            {
+                "number": "(820) 214-4331 x9690",
+                "name": "Michael Collier",
+                "id": "6"
+            },
+            {
+                "number": "(375) 699-6439 x84699",
+                "name": "Amanda Muller",
+                "id": "7"
+            },
+            {
+                "number": "1-552-379-5140 x0472",
+                "name": "Gregg Schiller",
+                "id": "8"
+            },
+            {
+                "number": "1-466-537-2032 x05765",
+                "name": "Vanessa Johnson",
+                "id": "9"
+            },
+            {
+                "number": "576-764-7528 x24896",
+                "name": "Sally Dach",
+                "id": "10"
+            }
+        ];
+
+        document.write('<table border=1 style="border-collapse: collapse" >');
+        for (let i = 0; i <Faculties.length; i++) {
+        
+            document.write('<tr>');
+                document.write('<td>' + Faculties[i].number + '</td>');
+                document.write('<td>' + Faculties[i].name + '</td>');
+                document.write('<td>' + Faculties[i].id + '</td>');
+            document.write('</tr>');
+        }
+
+
+        document.write('</table>');
+
+        console.log(Faculties);
+    </script>
+</body>
+
+</html>

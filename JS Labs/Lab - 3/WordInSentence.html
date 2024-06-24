@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s = prompt("Enter Any Sentence");
+        let word = prompt("Enter Word you want to Search");
+
+        let Sentence = s.split(" ");
+
+        for (let i = 0; i < Sentence.length; i++) {
+            if (Sentence[i] == word) {
+                document.write(word + " is found at " + (i + 1) + " position")
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
