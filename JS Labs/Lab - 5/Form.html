@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .container {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container d-flex flex-column">
+        <div class="mb-3">
+            <label for="" class="form-label">Username : </label>
+            <input type="text" class="form-control" name="name" id="name" aria-describedby="helpId" placeholder="" />
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Password : </label>
+            <input type="password" class="form-control" name="pass" id="pass" placeholder="" />
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Email : </label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
+                placeholder="abc@mail.com" />
+        </div>
+        <div>
+            <label for="enroll" class="form-label">Enrollment No : </label>
+            <input type="number" class="form-control" name="enroll" id="enroll" />
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-5" id="submit">
+            Submit
+        </button>
+
+
+    </div>
+
+    <script src="Form.js"></script>
+</body>
+
+</html>
